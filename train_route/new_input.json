@@ -1,0 +1,255 @@
+{
+    "products": {
+        "mean_weight": [
+            60,
+            52,
+            35
+        ]
+    },
+    "trains": {
+        "num_wagons": [
+            57,
+            57,
+            57,
+            57,
+            57,
+            57,
+            57,
+            57,
+            43,
+            43,
+            43,
+            43,
+            43
+        ],
+        "locations": {
+            "5": [
+                0
+            ],
+            "9": [
+                0
+            ],
+            "3": [
+                1
+            ],
+            "4": [
+                0,
+                1
+            ],
+            "7": [
+                2
+            ],
+            "6": [
+                1,
+                2
+            ],
+            "8": [
+                3
+            ],
+            "10": [
+                1,
+                3
+            ],
+            "2": [
+                1
+            ]
+        }
+    },
+    "terminals": {
+        "trains": [
+            [
+                {
+                    "train_id": "5",
+                    "operation_time": 1.0
+                },
+                {
+                    "train_id": "9",
+                    "operation_time": 8.0
+                }
+            ],
+            [
+                {
+                    "train_id": "3",
+                    "operation_time": 8.0
+                },
+                {
+                    "train_id": "2",
+                    "operation_time": 1.0
+                }
+            ],
+            [
+                {
+                    "train_id": "7",
+                    "operation_time": 1.0
+                }
+            ],
+            [
+                {
+                    "train_id": "8",
+                    "operation_time": 0.0
+                }
+            ]
+        ],
+        "load_times": [
+            8,
+            8,
+            8,
+            8
+        ],
+        "unload_times": [
+            7,
+            7,
+            7,
+            7
+        ],
+        "demands": [
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0
+            ]
+        ],
+        "stocks": [
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                0
+            ]
+        ]
+    },
+    "routes": [
+        [
+            {
+                "max_trains": null,
+                "transit_time": 0,
+                "eta": []
+            },
+            {
+                "max_trains": null,
+                "transit_time": 23,
+                "eta": [
+                    {
+                        "train_id": "4",
+                        "eta": 12.0
+                    }
+                ]
+            },
+            {
+                "max_trains": null,
+                "transit_time": 27,
+                "eta": []
+            },
+            {
+                "max_trains": null,
+                "transit_time": 38,
+                "eta": []
+            }
+        ],
+        [
+            {
+                "max_trains": null,
+                "transit_time": 23,
+                "eta": []
+            },
+            {
+                "max_trains": null,
+                "transit_time": 0,
+                "eta": []
+            },
+            {
+                "max_trains": null,
+                "transit_time": 37,
+                "eta": [
+                    {
+                        "train_id": "6",
+                        "eta": 9.0
+                    }
+                ]
+            },
+            {
+                "max_trains": null,
+                "transit_time": 22,
+                "eta": [
+                    {
+                        "train_id": "10",
+                        "eta": 6.0
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "max_trains": null,
+                "transit_time": 26,
+                "eta": []
+            },
+            {
+                "max_trains": null,
+                "transit_time": 35,
+                "eta": []
+            },
+            {
+                "max_trains": null,
+                "transit_time": 0,
+                "eta": []
+            },
+            {
+                "max_trains": null,
+                "transit_time": 25,
+                "eta": []
+            }
+        ],
+        [
+            {
+                "max_trains": null,
+                "transit_time": 41,
+                "eta": []
+            },
+            {
+                "max_trains": null,
+                "transit_time": 21,
+                "eta": []
+            },
+            {
+                "max_trains": null,
+                "transit_time": 24,
+                "eta": []
+            },
+            {
+                "max_trains": null,
+                "transit_time": 0,
+                "eta": []
+            }
+        ]
+    ]
+}

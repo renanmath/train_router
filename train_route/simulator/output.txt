@@ -1,0 +1,470 @@
+Iniciando otimização
+Condições iniciais
+
+Terminal 0:
+	Demanda: [0, 1200, 0, 0]
+	Estoque: [0, 0, 50000, 36000]
+
+Terminal 1:
+	Demanda: [0, 0, 500, 800]
+	Estoque: [0, 80000, 0, 0]
+
+Terminal 2:
+	Demanda: [0, 1500, 0, 600]
+	Estoque: [0, 0, 45000, 0]
+
+Terminal 3:
+	Demanda: [0, 0, 0, 0]
+	Estoque: [0, 60000, 0, 24000]
+
+
+####### Iteration 1 #######
+Solution:  optimal
+________________________________
+Total de vagões despachados: 200
+Horizonte de tempo simulado: 9.0 horas
+------
+Trem 0 despachado do Terminal 0 para Terminal 1
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 53 vagões do produto 2 | 4 vagões do produto 3 | 
+------
+Trem 1 despachado do Terminal 2 para Terminal 3
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 57 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 11 despachado do Terminal 3 para Terminal 2
+| 0 vagões do produto 0 | 35 vagões do produto 1 | 0 vagões do produto 2 | 8 vagões do produto 3 | 
+------
+Trem 12 despachado do Terminal 1 para Terminal 0
+| 0 vagões do produto 0 | 43 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 577, 0, 0], [0, 0, 1537, 110], [0, 1201, 0, 259], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 1.0 horas | Terminal 1: 1.0 horas | Terminal 2: 1.0 horas | Terminal 3: 0 horas | 
+Tempo de simulação =  9.0
+
+####### Iteration 2 #######
+Demanda realizada na iteração anterior:
+[[0, 2580, 0, 0], [0, 0, 2756, 140], [0, 2100, 0, 280], [0, 0, 2964, 0]]
+Demanda total restante:
+[[0, 9420, 0, 0], [0, 0, 29244, 2160], [0, 22900, 0, 5120], [0, 0, 0, 0]]
+Solution:  optimal
+________________________________
+Total de vagões despachados: 314
+Horizonte de tempo simulado: 13.0 horas
+------
+Trem 2 despachado do Terminal 1 para Terminal 3
+| 0 vagões do produto 0 | 57 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 3 despachado do Terminal 1 para Terminal 0
+| 0 vagões do produto 0 | 57 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 5 despachado do Terminal 0 para Terminal 1
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 52 vagões do produto 2 | 5 vagões do produto 3 | 
+------
+Trem 7 despachado do Terminal 2 para Terminal 3
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 57 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 8 despachado do Terminal 3 para Terminal 2
+| 0 vagões do produto 0 | 32 vagões do produto 1 | 0 vagões do produto 2 | 11 vagões do produto 3 | 
+------
+Trem 9 despachado do Terminal 0 para Terminal 3
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 43 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 532, 0, 0], [0, 0, 2059, 158], [0, 1617, 0, 376], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 0 horas | Terminal 1: 6.0 horas | Terminal 2: 3.0 horas | Terminal 3: 0 horas | 
+Tempo de simulação =  22.0
+
+####### Iteration 3 #######
+Demanda realizada na iteração anterior:
+[[0, 3420, 0, 0], [0, 0, 2704, 175], [0, 1920, 0, 385], [0, 3420, 5200, 0]]
+Demanda total restante:
+[[0, 6000, 0, 0], [0, 0, 26540, 1985], [0, 20980, 0, 4735], [0, 0, 0, 0]]
+Solução infactível
+Tentando relaxar as restrições de demanda
+Tentando solução sem restrições de demanda
+Solution:  optimal
+________________________________
+Total de vagões despachados: 157
+Horizonte de tempo simulado: 18.0 horas
+------
+Trem 4 despachado do Terminal 1 para Terminal 3
+| 0 vagões do produto 0 | 57 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 6 despachado do Terminal 2 para Terminal 3
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 57 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 10 despachado do Terminal 3 para Terminal 2
+| 0 vagões do produto 0 | 39 vagões do produto 1 | 0 vagões do produto 2 | 4 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 116, 0, 0], [0, 0, 2777, 219], [0, 2229, 0, 529], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 1.0 horas | Terminal 1: 0 horas | Terminal 2: 0.5 horas | Terminal 3: 3.0 horas | 
+Tempo de simulação =  40.0
+
+####### Iteration 4 #######
+Demanda realizada na iteração anterior:
+[[0, 0, 0, 0], [0, 0, 0, 0], [0, 2340, 0, 140], [0, 3420, 2964, 0]]
+Demanda total restante:
+[[0, 6000, 0, 0], [0, 0, 26540, 1985], [0, 18640, 0, 4595], [0, 0, 0, 0]]
+Solution:  optimal
+________________________________
+Total de vagões despachados: 200
+Horizonte de tempo simulado: 8.0 horas
+------
+Trem 0 despachado do Terminal 1 para Terminal 0
+| 0 vagões do produto 0 | 57 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 1 despachado do Terminal 3 para Terminal 2
+| 0 vagões do produto 0 | 48 vagões do produto 1 | 0 vagões do produto 2 | 9 vagões do produto 3 | 
+------
+Trem 11 despachado do Terminal 2 para Terminal 3
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 43 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 12 despachado do Terminal 0 para Terminal 1
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 39 vagões do produto 2 | 4 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 139, 0, 0], [0, 0, 1622, 124], [0, 1020, 0, 287], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 7.0 horas | Terminal 1: 0 horas | Terminal 2: 0 horas | Terminal 3: 2.0 horas | 
+Tempo de simulação =  48.0
+
+####### Iteration 5 #######
+Demanda realizada na iteração anterior:
+[[0, 3420, 0, 0], [0, 0, 2028, 140], [0, 2880, 0, 315], [0, 0, 2236, 0]]
+Demanda total restante:
+[[0, 2580, 0, 0], [0, 0, 24512, 1845], [0, 15760, 0, 4280], [0, 0, 0, 0]]
+Solution:  optimal
+________________________________
+Total de vagões despachados: 271
+Horizonte de tempo simulado: 13.0 horas
+------
+Trem 2 despachado do Terminal 3 para Terminal 2
+| 0 vagões do produto 0 | 47 vagões do produto 1 | 0 vagões do produto 2 | 10 vagões do produto 3 | 
+------
+Trem 3 despachado do Terminal 0 para Terminal 1
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 51 vagões do produto 2 | 6 vagões do produto 3 | 
+------
+Trem 5 despachado do Terminal 1 para Terminal 0
+| 0 vagões do produto 0 | 57 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 7 despachado do Terminal 3 para Terminal 2
+| 0 vagões do produto 0 | 53 vagões do produto 1 | 0 vagões do produto 2 | 4 vagões do produto 3 | 
+------
+Trem 8 despachado do Terminal 2 para Terminal 0
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 43 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 0, 0, 0], [0, 0, 2558, 200], [0, 1305, 0, 461], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 0 horas | Terminal 1: 0 horas | Terminal 2: 0 horas | Terminal 3: 4.0 horas | 
+Tempo de simulação =  61.0
+
+####### Iteration 6 #######
+Demanda realizada na iteração anterior:
+[[0, 3420, 2236, 0], [0, 0, 2652, 210], [0, 6000, 0, 490], [0, 0, 0, 0]]
+Demanda total restante:
+[[0, 0, 0, 0], [0, 0, 21860, 1635], [0, 9760, 0, 3790], [0, 0, 0, 0]]
+Solução infactível
+Tentando relaxar as restrições de demanda
+Tentando solução sem restrições de demanda
+Solution:  optimal
+________________________________
+Total de vagões despachados: 100
+Horizonte de tempo simulado: 9.0 horas
+------
+Trem 4 despachado do Terminal 3 para Terminal 0
+| 0 vagões do produto 0 | 57 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 10 despachado do Terminal 2 para Terminal 0
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 43 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 0, 0, 0], [0, 0, 1772, 138], [0, 219, 0, 315], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 0 horas | Terminal 1: 0 horas | Terminal 2: 0 horas | Terminal 3: 2.0 horas | 
+Tempo de simulação =  70.0
+
+####### Iteration 7 #######
+Demanda realizada na iteração anterior:
+[[0, 3420, 2236, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+Demanda total restante:
+[[0, 0, 0, 0], [0, 0, 21860, 1635], [0, 9760, 0, 3790], [0, 0, 0, 0]]
+Solução infactível
+Tentando relaxar as restrições de demanda
+Tentando solução sem restrições de demanda
+Solution:  optimal
+________________________________
+Total de vagões despachados: 57
+Horizonte de tempo simulado: 8.0 horas
+------
+Trem 6 despachado do Terminal 3 para Terminal 0
+| 0 vagões do produto 0 | 57 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 0, 0, 0], [0, 0, 1784, 133], [0, 322, 0, 309], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 0 horas | Terminal 1: 1.0 horas | Terminal 2: 4.0 horas | Terminal 3: 1.0 horas | 
+Tempo de simulação =  78.0
+
+####### Iteration 8 #######
+Demanda realizada na iteração anterior:
+[[0, 3420, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+Demanda total restante:
+[[0, 0, 0, 0], [0, 0, 21860, 1635], [0, 9760, 0, 3790], [0, 0, 0, 0]]
+Solution:  optimal
+________________________________
+Total de vagões despachados: 243
+Horizonte de tempo simulado: 8.0 horas
+------
+Trem 0 despachado do Terminal 0 para Terminal 1
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 52 vagões do produto 2 | 5 vagões do produto 3 | 
+------
+Trem 1 despachado do Terminal 2 para Terminal 3
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 57 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 9 despachado do Terminal 3 para Terminal 0
+| 0 vagões do produto 0 | 43 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 11 despachado do Terminal 3 para Terminal 2
+| 0 vagões do produto 0 | 33 vagões do produto 1 | 0 vagões do produto 2 | 10 vagões do produto 3 | 
+------
+Trem 12 despachado do Terminal 1 para Terminal 0
+| 0 vagões do produto 0 | 43 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 0, 0, 0], [0, 0, 1943, 145], [0, 457, 0, 337], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 0 horas | Terminal 1: 7.0 horas | Terminal 2: 3.0 horas | Terminal 3: 0 horas | 
+Tempo de simulação =  86.0
+
+####### Iteration 9 #######
+Demanda realizada na iteração anterior:
+[[0, 5160, 0, 0], [0, 0, 2704, 175], [0, 1980, 0, 350], [0, 0, 2964, 0]]
+Demanda total restante:
+[[0, 0, 0, 0], [0, 0, 19156, 1460], [0, 7780, 0, 3440], [0, 0, 0, 0]]
+Solução infactível
+Tentando relaxar as restrições de demanda
+Tentando solução sem restrições de demanda
+Solution:  optimal
+________________________________
+Total de vagões despachados: 214
+Horizonte de tempo simulado: 10.0 horas
+------
+Trem 2 despachado do Terminal 2 para Terminal 0
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 57 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 3 despachado do Terminal 1 para Terminal 3
+| 0 vagões do produto 0 | 57 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 5 despachado do Terminal 0 para Terminal 3
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 57 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 8 despachado do Terminal 0 para Terminal 3
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 43 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 0, 0, 0], [0, 0, 2336, 178], [0, 314, 0, 420], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 6.0 horas | Terminal 1: 0 horas | Terminal 2: 0 horas | Terminal 3: 0 horas | 
+Tempo de simulação =  96.0
+
+####### Iteration 10 #######
+Demanda realizada na iteração anterior:
+[[0, 0, 2964, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 3420, 5200, 0]]
+Demanda total restante:
+[[0, 0, 0, 0], [0, 0, 19156, 1460], [0, 7780, 0, 3440], [0, 0, 0, 0]]
+Solução infactível
+Tentando relaxar as restrições de demanda
+Tentando solução sem restrições de demanda
+Solution:  optimal
+________________________________
+Total de vagões despachados: 100
+Horizonte de tempo simulado: 20.0 horas
+------
+Trem 7 despachado do Terminal 2 para Terminal 0
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 57 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 10 despachado do Terminal 0 para Terminal 3
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 43 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 0, 0, 0], [0, 0, 5321, 406], [0, 1128, 0, 956], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 1.0 horas | Terminal 1: 0 horas | Terminal 2: 0 horas | Terminal 3: 6.0 horas | 
+Tempo de simulação =  116.0
+
+####### Iteration 11 #######
+Demanda realizada na iteração anterior:
+[[0, 0, 2964, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 2236, 0]]
+Demanda total restante:
+[[0, 0, 0, 0], [0, 0, 19156, 1460], [0, 7780, 0, 3440], [0, 0, 0, 0]]
+Solution:  optimal
+________________________________
+Total de vagões despachados: 214
+Horizonte de tempo simulado: 9.0 horas
+------
+Trem 0 despachado do Terminal 1 para Terminal 0
+| 0 vagões do produto 0 | 57 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 1 despachado do Terminal 3 para Terminal 2
+| 0 vagões do produto 0 | 40 vagões do produto 1 | 0 vagões do produto 2 | 17 vagões do produto 3 | 
+------
+Trem 4 despachado do Terminal 0 para Terminal 1
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 55 vagões do produto 2 | 2 vagões do produto 3 | 
+------
+Trem 12 despachado do Terminal 0 para Terminal 1
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 37 vagões do produto 2 | 6 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 0, 0, 0], [0, 0, 3315, 253], [0, 1219, 0, 595], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 6.0 horas | Terminal 1: 0 horas | Terminal 2: 0 horas | Terminal 3: 5.0 horas | 
+Tempo de simulação =  125.0
+
+####### Iteration 12 #######
+Demanda realizada na iteração anterior:
+[[0, 3420, 0, 0], [0, 0, 4784, 280], [0, 2400, 0, 595], [0, 0, 0, 0]]
+Demanda total restante:
+[[0, 0, 0, 0], [0, 0, 14372, 1180], [0, 5380, 0, 2845], [0, 0, 0, 0]]
+Solução infactível
+Tentando relaxar as restrições de demanda
+Solução factível a 75% das demandas
+Solution:  optimal
+________________________________
+Total de vagões despachados: 157
+Horizonte de tempo simulado: 10.0 horas
+------
+Trem 3 despachado do Terminal 3 para Terminal 2
+| 0 vagões do produto 0 | 42 vagões do produto 1 | 0 vagões do produto 2 | 15 vagões do produto 3 | 
+------
+Trem 6 despachado do Terminal 0 para Terminal 1
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 49 vagões do produto 2 | 8 vagões do produto 3 | 
+------
+Trem 11 despachado do Terminal 2 para Terminal 0
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 43 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 0, 0, 0], [0, 0, 3342, 274], [0, 891, 0, 662], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 3.0 horas | Terminal 1: 0 horas | Terminal 2: 0 horas | Terminal 3: 4.0 horas | 
+Tempo de simulação =  135.0
+
+####### Iteration 13 #######
+Demanda realizada na iteração anterior:
+[[0, 0, 2236, 0], [0, 0, 2548, 280], [0, 2520, 0, 525], [0, 0, 0, 0]]
+Demanda total restante:
+[[0, 0, 0, 0], [0, 0, 11824, 900], [0, 2860, 0, 2320], [0, 0, 0, 0]]
+Solution:  optimal
+________________________________
+Total de vagões despachados: 157
+Horizonte de tempo simulado: 11.0 horas
+------
+Trem 2 despachado do Terminal 0 para Terminal 1
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 51 vagões do produto 2 | 6 vagões do produto 3 | 
+------
+Trem 5 despachado do Terminal 3 para Terminal 2
+| 0 vagões do produto 0 | 34 vagões do produto 1 | 0 vagões do produto 2 | 23 vagões do produto 3 | 
+------
+Trem 9 despachado do Terminal 0 para Terminal 1
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 40 vagões do produto 2 | 3 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 0, 0, 0], [0, 0, 3941, 300], [0, 180, 0, 773], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 6.0 horas | Terminal 1: 0 horas | Terminal 2: 0 horas | Terminal 3: 0 horas | 
+Tempo de simulação =  146.0
+
+####### Iteration 14 #######
+Demanda realizada na iteração anterior:
+[[0, 0, 0, 0], [0, 0, 4732, 315], [0, 2040, 0, 805], [0, 0, 0, 0]]
+Demanda total restante:
+[[0, 0, 0, 0], [0, 0, 7092, 585], [0, 820, 0, 1515], [0, 0, 0, 0]]
+Solution:  optimal
+________________________________
+Total de vagões despachados: 100
+Horizonte de tempo simulado: 8.0 horas
+------
+Trem 7 despachado do Terminal 0 para Terminal 1
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 50 vagões do produto 2 | 7 vagões do produto 3 | 
+------
+Trem 8 despachado do Terminal 3 para Terminal 2
+| 0 vagões do produto 0 | 27 vagões do produto 1 | 0 vagões do produto 2 | 16 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 0, 0, 0], [0, 0, 2579, 213], [0, 0, 0, 551], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 5.0 horas | Terminal 1: 1.0 horas | Terminal 2: 7.0 horas | Terminal 3: 1.0 horas | 
+Tempo de simulação =  154.0
+
+####### Iteration 15 #######
+Demanda realizada na iteração anterior:
+[[0, 0, 0, 0], [0, 0, 2600, 245], [0, 1620, 0, 560], [0, 0, 0, 0]]
+Demanda total restante:
+[[0, 0, 0, 0], [0, 0, 4492, 340], [0, 0, 0, 955], [0, 0, 0, 0]]
+Solution:  optimal
+________________________________
+Total de vagões despachados: 200
+Horizonte de tempo simulado: 8.0 horas
+------
+Trem 0 despachado do Terminal 0 para Terminal 1
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 51 vagões do produto 2 | 6 vagões do produto 3 | 
+------
+Trem 1 despachado do Terminal 2 para Terminal 3
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 57 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 10 despachado do Terminal 3 para Terminal 2
+| 0 vagões do produto 0 | 27 vagões do produto 1 | 0 vagões do produto 2 | 16 vagões do produto 3 | 
+------
+Trem 12 despachado do Terminal 1 para Terminal 0
+| 0 vagões do produto 0 | 43 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 0, 0, 0], [0, 0, 2567, 194], [0, 0, 0, 546], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 4.0 horas | Terminal 1: 0 horas | Terminal 2: 7.0 horas | Terminal 3: 0 horas | 
+Tempo de simulação =  162.0
+
+####### Iteration 16 #######
+Demanda realizada na iteração anterior:
+[[0, 2580, 0, 0], [0, 0, 2652, 210], [0, 1620, 0, 560], [0, 0, 2964, 0]]
+Demanda total restante:
+[[0, 0, 0, 0], [0, 0, 1840, 130], [0, 0, 0, 395], [0, 0, 0, 0]]
+Solução infactível
+Tentando relaxar as restrições de demanda
+Tentando solução sem restrições de demanda
+Solution:  optimal
+________________________________
+Total de vagões despachados: 214
+Horizonte de tempo simulado: 14.0 horas
+------
+Trem 3 despachado do Terminal 2 para Terminal 3
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 57 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 4 despachado do Terminal 1 para Terminal 0
+| 0 vagões do produto 0 | 57 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 6 despachado do Terminal 1 para Terminal 0
+| 0 vagões do produto 0 | 57 vagões do produto 1 | 0 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Trem 11 despachado do Terminal 0 para Terminal 3
+| 0 vagões do produto 0 | 0 vagões do produto 1 | 43 vagões do produto 2 | 0 vagões do produto 3 | 
+------
+Demanda para esta iteração:
+[[0, 0, 0, 0], [0, 0, 4293, 303], [0, 0, 0, 922], [0, 0, 0, 0]]
+Tempos de fila:
+| Terminal 0: 0 horas | Terminal 1: 0 horas | Terminal 2: 2.0 horas | Terminal 3: 0 horas | 
+Tempo de simulação =  176.0
+
+Demanda inicial:
+[[0, 12000, 0, 0], [0, 0, 32000, 2300], [0, 25000, 0, 5400], [0, 0, 0, 0]]
+Demanda realizada na iteração anterior:
+[[0, 6840, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 5200, 0]]
+Demanda total restante:
+[[0, 0, 0, 0], [0, 0, 1840, 130], [0, 0, 0, 395], [0, 0, 0, 0]]
+Percentual da demanda restante:
+[[0, 0.0, 0, 0], [0, 0, 0.0575, 0.05652173913043478], [0, 0.0, 0, 0.07314814814814814], [0, 0, 0, 0]]
+Total de vagões despachados:  2898
